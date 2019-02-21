@@ -16,7 +16,7 @@
 
 
 report <- function(rmd, n_file, open_file = TRUE,
-                   report_dir = "reports", rmds_dir = "rmds") {
+                   report_dir = "reports", rmds_dir = "rmds", doc_dir = "docs", index = TRUE) {
 
   if(!require(rmarkdown)) stop("Install rmarkdown package")
   library("rmarkdown")
@@ -45,6 +45,22 @@ report <- function(rmd, n_file, open_file = TRUE,
     ),
     output_file = file_name,
     output_dir = report_dir,
+    envir = new.env()
+  )
+
+  if(index == TRUE){
+    file_name = "index.html"
+  }
+  rmarkdown::render(
+    input = rmd_path,
+    encoding = "UTF-8",
+    output_format = html_document(
+      toc = TRUE,
+      toc_depth = 1,
+      code_folding = "hide"
+    ),
+    output_file = file_name,
+    output_dir = doc_dir,
     envir = new.env()
   )
 
