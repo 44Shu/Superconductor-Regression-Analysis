@@ -18,4 +18,11 @@ The dataset can also be accessed here at [UCI's Machine Learning Repository](htt
 
 ## Project Structure
 
-In this project the analysis code will be contained in the `Analysis_Code.R` file, where the report markdown code will be held in `Analysis_Report.Rmd`. This is due to R markdown files getting unwieldy quickly. No analysis code will be shown in the report unless necessary, and the report will aim to explore my results, techniques, and final conclusions. 
+In this project:
+
+- The analysis code will be contained in the `rscripts` folder, 
+- Any Report markdown and html code will be held in the `reports` folder.
+- The project data will be held in in the `raw_data` folder.
+- Any plots and figures will also be output to the `plots` or `assets` folder.
+
+This structure allows for working with large datasets and information without the drawbacks of an r-markdown file's memory inefficiency.
