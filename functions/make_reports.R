@@ -12,11 +12,14 @@
 #' @importFrom rmarkdown render
 #' @md
 #'
+#'
+
+
 report <- function(rmd, n_file, open_file = TRUE,
                    report_dir = "reports", rmds_dir = "rmds") {
 
   if(!require(rmarkdown)) stop("Install rmarkdown package")
-
+  library("rmarkdown")
   rmd_path <- file.path(rmds_dir, rmd)
 
   # Generate the file name (without number) based on rmd file
