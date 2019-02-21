@@ -16,6 +16,10 @@ A description of the data set from UCI's machine learning repository can be foun
 
 The dataset can also be accessed here at [UCI's Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Superconductivty+Data).
 
+In this report I will also be referencing Kam Hamidieh's Paper on the same dataset, where he instead used machine learning to model the data. His work also included gathering the data and aggregating it into a great format and making it publicly available on UCI's Machine Learning Repo.
+
+Hamidieh, Kam. “A Data-Driven Statistical Model for Predicting the Critical Temperature of a Superconductor.” Computational Materials Science, vol. 154, 2018, pp. 346–354., doi:10.1016/j.commatsci.2018.07.052.
+
 ## Project Structure
 
 In this project:
